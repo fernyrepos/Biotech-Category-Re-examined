@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+<!-- ALPHA MEMES PATCHES -->   
+                <Operation Class="PatchOperationAdd">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="AM_AncientOperatingTable"]</xpath>
+                    <value>
+                        <designationCategory>Biotech</designationCategory>
+                    </value>
+                </Operation>
+</Patch>

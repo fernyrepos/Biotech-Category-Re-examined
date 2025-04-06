@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ModMetaData>
+	<name>Biotech Category Re-examined</name>
+	<author>ferny</author>
+	<packageId>ferny.biotechcategory</packageId>
+	<supportedVersions>
+		<li>1.4</li>
+		<li>1.5</li>
+	</supportedVersions>
+	<description>Re-examines what should and shouldn't be in the Biotech category.</description>
+	<loadAfter>
+		<li>Ludeon.Rimworld</li>
+		<li>Ludeon.Rimworld.Royalty</li>
+		<li>Ludeon.Rimworld.Ideology</li>
+		<li>Ludeon.Rimworld.Biotech</li>
+		<li>sarg.alphamechs</li>
+		<li>vanillaracesexpanded.waster</li>
+		<li>VanillaExpanded.Recycling</li>
+		<li>Harkon.BiotechAddOn.MedievalDeathrestCoffin</li>
+		<li>vanillaexpanded.vfemedical</li>
+		<li>heremeus.medicaldissection</li>
+	</loadAfter>
+</ModMetaData>

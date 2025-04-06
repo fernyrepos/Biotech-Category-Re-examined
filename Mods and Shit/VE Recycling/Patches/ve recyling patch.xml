@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+<!-- RECYCLING PATCHES -->   
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VRecyclingE_LargePollutionPump"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Misc</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VRecyclingE_PollutionFastPump"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Misc</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VRecyclingE_RecyclingWorkbench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VRecyclingE_ElectricRecyclingWorkbench"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VRecyclingE_GarbageCompactor"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Production</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="VRecyclingE_AlloypackSplitter"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Production</designationCategory>
+                    </value>
+                </Operation>
+</Patch>

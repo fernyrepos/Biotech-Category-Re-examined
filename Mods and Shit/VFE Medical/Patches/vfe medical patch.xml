@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>          
+<!-- WASTERS PATCHES -->   
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Facility_VitalsCentre"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Biotech</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Bed_CryptoBed"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Biotech</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Facility_IVDrip"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Biotech</designationCategory>
+                    </value>
+                </Operation>
+                <Operation Class="PatchOperationReplace">
+                    <success>Always</success>
+                    <xpath>Defs/ThingDef[defName="Bed_OperatingTable"]/designationCategory</xpath>
+                    <value>
+                        <designationCategory>Biotech</designationCategory>
+                    </value>
+                </Operation>
+
+
+
+
+
+                <Operation Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName="Bed_CryptoBed"]/uiOrder</xpath>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Bed_CryptoBed"]/uiOrder</xpath>
+                                <value>
+                                    <uiOrder>1998</uiOrder>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Bed_CryptoBed"]</xpath>
+                                <value>
+                                    <uiOrder>1998</uiOrder>
+                                </value>
+                            </li>
+                        </operations>
+                    </nomatch>
+                </Operation>
+
+
+
+
+                <Operation Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName="Bed_OperatingTable"]/uiOrder</xpath>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Bed_OperatingTable"]/uiOrder</xpath>
+                                <value>
+                                    <uiOrder>1999</uiOrder>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Bed_OperatingTable"]</xpath>
+                                <value>
+                                    <uiOrder>1999</uiOrder>
+                                </value>
+                            </li>
+                        </operations>
+                    </nomatch>
+                </Operation>
+
+
+
+                <Operation Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName="Facility_VitalsCentre"]/uiOrder</xpath>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Facility_VitalsCentre"]/uiOrder</xpath>
+                                <value>
+                                    <uiOrder>2000</uiOrder>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Facility_VitalsCentre"]</xpath>
+                                <value>
+                                    <uiOrder>2000</uiOrder>
+                                </value>
+                            </li>
+                        </operations>
+                    </nomatch>
+                </Operation>
+
+
+                <Operation Class="PatchOperationConditional">
+                    <xpath>/Defs/ThingDef[defName="Facility_IVDrip"]/uiOrder</xpath>
+                    <match Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationReplace">
+                                <xpath>/Defs/ThingDef[defName="Facility_IVDrip"]/uiOrder</xpath>
+                                <value>
+                                    <uiOrder>2000</uiOrder>
+                                </value>
+                            </li>
+                        </operations>
+                    </match>
+                    <nomatch Class="PatchOperationSequence">
+                        <operations>
+                            <li Class="PatchOperationAdd">
+                                <xpath>/Defs/ThingDef[defName="Facility_IVDrip"]</xpath>
+                                <value>
+                                    <uiOrder>2000</uiOrder>
+                                </value>
+                            </li>
+                        </operations>
+                    </nomatch>
+                </Operation>
+</Patch>
